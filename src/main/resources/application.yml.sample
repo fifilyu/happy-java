@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/redas?serverTimezone=Asia/Shanghai&useUnicode=yes&characterEncoding=UTF-8
+    username: redas
+    password: redas
+  jpa:
+    show-sql: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+    # 开启发送确认
+    publisher-confirms: true
+    # 开启发送失败退回
+    publisher-returns: true
+    # 开启ACK
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+
+redas:
+  mq:
+    host: 192.168.2.2:9092
+    group: test
+    topic: test
+  mq_positions_url_html:
+    host: 192.168.0.4:9092
+    group: positions_url_html
+    topic: positions_url_html
+
+  mq_position_url:
+    host: 192.168.0.4:9092
+    group: position_url
+    topic: position_url
+
+  mq_position_detail_html:
+    host: 192.168.0.4:9092
+    group: position_detail_html
+    topic: position_detail_html
+  elasticsearch:
+    position:
+      scheme: http
+      host: 192.168.0.4
+      port: 9200
+      index: redas
+      type: position
