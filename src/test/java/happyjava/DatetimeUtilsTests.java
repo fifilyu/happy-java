@@ -1,4 +1,4 @@
-package happy_java;
+package happyjava;
 
 import org.junit.Test;
 

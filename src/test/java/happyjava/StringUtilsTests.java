@@ -1,6 +1,5 @@
-package happy_java;
+package happyjava;
 
-import happy_java.StringUtils;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

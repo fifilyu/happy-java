@@ -1,4 +1,4 @@
-package happy_java;
+package happyjava;
 
 @SuppressWarnings(value = "unused")
 public class StringUtils {
