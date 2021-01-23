@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 public class HappyLog {
     private final Logger logger;
 
-    public HappyLog(Logger logger) {
-        this.logger = logger;
+    public HappyLog() {
+        logger = LoggerFactory.getLogger(HappyLog.class);
     }
 
     public HappyLog(Class<?> clazz) {
