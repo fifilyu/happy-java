@@ -3,7 +3,7 @@ package io.github.happyjava;
 @SuppressWarnings(value = "unused")
 public class ArgumentUtils {
     /**
-     * 从命令行或环境变量获取指定参数的值，优先级：命令行 > 环境变量
+     * 从命令行或环境变量获取指定参数的值，优先级：命令行、环境变量
      *
      * 命令行参数：
      *      1. System.setProperty("log_dir", "/tmp/log");
@@ -28,7 +28,7 @@ public class ArgumentUtils {
     }
 
     /**
-     * 从命令行或环境变量获取指定参数的值，优先级：命令行 > 环境变量
+     * 从命令行或环境变量获取指定参数的值，优先级：命令行、环境变量
      *
      * 命令行参数：
      *      1. System.setProperty("log_dir", "/tmp/log");
@@ -71,6 +71,7 @@ public class ArgumentUtils {
      *      2. java -jar jarName -D propertyName=value
      *
      * @param name 参数名称
+     * @param defaultValue 默认值
      * @return （默认）参数值
      */
     public static String getArgFromCmd(String name, String defaultValue) {
@@ -95,6 +96,7 @@ public class ArgumentUtils {
      * 环境变量由操作系统设置
      *
      * @param name 参数名称
+     * @param defaultValue 默认值
      * @return （默认）参数值
      */
     public static String getArgFromEnv(String name, String defaultValue) {
