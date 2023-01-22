@@ -1,5 +1,6 @@
-package happyjava;
+package io.github.happyjava;
 
+import io.github.happyjava.StringUtils;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,4 +1,4 @@
-package happyjava;
+package io.github.happyjava;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;

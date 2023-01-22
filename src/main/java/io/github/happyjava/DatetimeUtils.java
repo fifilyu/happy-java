@@ -1,4 +1,4 @@
-package happyjava;
+package io.github.happyjava;
 
 import java.sql.Timestamp;
 

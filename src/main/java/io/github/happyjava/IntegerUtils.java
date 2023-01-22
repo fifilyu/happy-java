@@ -1,4 +1,4 @@
-package happyjava;
+package io.github.happyjava;
 
 @SuppressWarnings(value = "unused")
 public class IntegerUtils {

@@ -1,5 +1,6 @@
-package happyjava;
+package io.github.happyjava;
 
+import io.github.happyjava.JsonUtils;
 import org.junit.Test;
 
 import java.util.HashMap;
