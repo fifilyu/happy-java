@@ -1,11 +1,10 @@
 package io.github.happyjava;
 
-import io.github.happyjava.DatetimeUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.sql.Timestamp;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SuppressWarnings(value = "unused")
 public class DatetimeUtilsTests {

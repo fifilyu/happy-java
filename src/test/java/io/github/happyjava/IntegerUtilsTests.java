@@ -1,9 +1,9 @@
 package io.github.happyjava;
 
-import io.github.happyjava.IntegerUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SuppressWarnings(value = "unused")
 public class IntegerUtilsTests {
