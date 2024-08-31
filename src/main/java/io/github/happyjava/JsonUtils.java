@@ -79,11 +79,25 @@ public class JsonUtils {
         }
     }
 
-
     public static <T> T fromJson(String jsonString, Class<T> classOfT) {
         try {
             Gson gson = new GsonBuilder()
                     .serializeNulls()
+                    .create();
+            return gson.fromJson(jsonString, classOfT);
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            log.error("JSON字符串转换到 JsonObject 对象错误");
+
+            return null;
+        }
+    }
+
+    public static <T> T fromUpperCaseJson(String jsonString, Class<T> classOfT) {
+        try {
+            Gson gson = new GsonBuilder()
+                    .serializeNulls()
+                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE) // 首字母大写
                     .create();
             return gson.fromJson(jsonString, classOfT);
         } catch (Exception e) {

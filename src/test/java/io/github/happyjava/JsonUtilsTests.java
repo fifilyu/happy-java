@@ -15,6 +15,12 @@ public class JsonUtilsTests {
         assertNotNull(jsonTest);
         assertEquals("hello", jsonTest.name);
         assertEquals("world", jsonTest.value);
+
+        JsonTest jsonTest2 =
+                JsonUtils.fromUpperCaseJson("{\"Name\": \"hello\", \"Value\": \"world\"}", JsonTest.class);
+        assertNotNull(jsonTest2);
+        assertEquals("hello", jsonTest2.name);
+        assertEquals("world", jsonTest2.value);
     }
 
     @Test
